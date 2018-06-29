@@ -1,0 +1,636 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.阿里云服务器科学上网搭建 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="阿里云域名解析.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    css
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../css/瀑布流.html">
+            
+                <a href="../css/瀑布流.html">
+            
+                    
+                    1.瀑布流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    html
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../html/标签.html">
+            
+                <a href="../html/标签.html">
+            
+                    
+                    1.标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../js/">
+            
+                <a href="../js/">
+            
+                    
+                    js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../js/es6.html">
+            
+                <a href="../js/es6.html">
+            
+                    
+                    1.es6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../node/">
+            
+                <a href="../node/">
+            
+                    
+                    node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../node/后端.html">
+            
+                <a href="../node/后端.html">
+            
+                    
+                    1.后端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ubuntu
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="操作系统.html">
+            
+                <a href="操作系统.html">
+            
+                    
+                    1.操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="阿里云域名解析.html">
+            
+                <a href="阿里云域名解析.html">
+            
+                    
+                    2.阿里云域名解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="阿里云服务器科学上网搭建.html">
+            
+                <a href="阿里云服务器科学上网搭建.html">
+            
+                    
+                    3.阿里云服务器科学上网搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >3.阿里云服务器科学上网搭建</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x6DFB;&#x52A0;&#x5B89;&#x5168;&#x7EC4;&#x89C4;&#x5219;&#xFF0C;&#x66B4;&#x9732;&#x7AEF;&#x53E3;&#xFF0C;&#x4FBF;&#x4E8E;&#x5176;&#x4ED6;-ip-&#x8BBF;&#x95EE;">&#x6DFB;&#x52A0;&#x5B89;&#x5168;&#x7EC4;&#x89C4;&#x5219;&#xFF0C;&#x66B4;&#x9732;&#x7AEF;&#x53E3;&#xFF0C;&#x4FBF;&#x4E8E;&#x5176;&#x4ED6; IP &#x8BBF;&#x95EE;</h2>
+<h2 id="&#x5B89;&#x88C5;-shadowsocks">&#x5B89;&#x88C5; shadowsocks</h2>
+<ul>
+<li><p>&#x66F4;&#x65B0;&#x5305;&#x7BA1;&#x7406;&#x5668;</p>
+<pre><code class="lang-dos?linenums">  apt update
+</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;</p>
+<pre><code class="lang-dos?linenums">  apt install shadowsocks
+</code></pre>
+</li>
+<li><p>&#x67E5;&#x770B;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;</p>
+<pre><code class="lang-dos?linenums">  ssserver
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x914D;&#x7F6E;-shadowsocks">&#x914D;&#x7F6E; shadowsocks</h2>
+<ul>
+<li><p>&#x7F16;&#x8F91;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-dos?linenums">  sudo vim /etc/shadowsocks/config.json
+</code></pre>
+<pre><code class="lang-json">  {
+      <span class="hljs-string">&quot;server&quot;</span>:<span class="hljs-string">&quot;0.0.0.0&quot;</span>,
+      <span class="hljs-string">&quot;server_port&quot;</span>:<span class="hljs-number">8388</span>,
+      <span class="hljs-string">&quot;local_address&quot;</span>: <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
+      <span class="hljs-string">&quot;local_port&quot;</span>:<span class="hljs-number">1080</span>,
+      <span class="hljs-string">&quot;password&quot;</span>:<span class="hljs-string">&quot;mypassword&quot;</span>,
+      <span class="hljs-string">&quot;timeout&quot;</span>:<span class="hljs-number">300</span>,
+      <span class="hljs-string">&quot;method&quot;</span>:<span class="hljs-string">&quot;aes-256-cfb&quot;</span>,
+      <span class="hljs-string">&quot;fast_open&quot;</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-string">&quot;workers&quot;</span>: <span class="hljs-number">1</span>
+  }
+</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8;&#x670D;&#x52A1;</p>
+<pre><code class="lang-dos?linenums">  ssserver -c /etc/shadowsocks/config.json
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x6D4B;&#x8BD5;-shadowsocks">&#x6D4B;&#x8BD5; shadowsocks</h2>
+<ul>
+<li>&#x53C2;&#x8003;<ul>
+<li><a href="https://github.com/myArticle/StoryWriter/blob/master/ubuntu18.04%20%E5%AE%89%E8%A3%85%20shadowsocks%20%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.md" target="_blank">ubuntu18.04 &#x5B89;&#x88C5; shadowsocks &#x5B9E;&#x73B0;&#x79D1;&#x5B66;&#x4E0A;&#x7F51;</a></li>
+<li><a href="https://github.com/myArticle/StoryWriter/blob/master/ubuntu%20%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%85%E9%A1%BB%E5%B7%A5%E5%85%B7.md" target="_blank">ubuntu &#x7684;&#x4E00;&#x4E9B;&#x5FC5;&#x987B;&#x5DE5;&#x5177;</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="systemd-&#x7BA1;&#x7406;-shadowsocks">systemd &#x7BA1;&#x7406; shadowsocks</h2>
+<ul>
+<li><p>&#x67E5;&#x770B; ssserver &#x547D;&#x4EE4;&#x7684;&#x8DEF;&#x5F84;</p>
+<pre><code class="lang-dos?linenums">  which ssserver
+</code></pre>
+</li>
+<li><p>&#x65B0;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-dos?linenums">  vim /etc/systemd/system/shadowsocks-server.service
+</code></pre>
+<pre><code class="lang-dos?linenums">  [Unit]
+  Description=Shadowsocks Server
+  After=network.target
+
+  [Service]
+  ExecStart=/usr/bin/ssserver -c /etc/shadowsocks/config.json
+  Restart=on-abort
+
+  [Install]
+  WantedBy=multi-user.target
+</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8; shadowsocks</p>
+<pre><code class="lang-dos?linenums">  systemctl start shadowsocks-server
+</code></pre>
+</li>
+<li><p>&#x8BBE;&#x7F6E;&#x5F00;&#x673A;&#x542F;&#x52A8;</p>
+<pre><code class="lang-dos?linenums">  systemctl enable shadowsocks-server
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x4F18;&#x5316;">&#x4F18;&#x5316;</h2>
+<h3 id="&#x5347;&#x7EA7;-linux-&#x5185;&#x6838;">&#x5347;&#x7EA7; Linux &#x5185;&#x6838;</h3>
+<ul>
+<li><p>&#x67E5;&#x770B;&#x7248;&#x672C;&#xFF0C;&#x5982;&#x679C;&#x4F4E;&#x4E8E; 4.9.0 &#xFF0C;&#x9700;&#x8981;&#x5347;&#x7EA7; Linux &#x5185;&#x6838;&#xFF0C;&#x5426;&#x5219;&#x76F4;&#x63A5; <code>&#x5F00;&#x542F;BBR</code></p>
+<pre><code class="lang-dos?linenums">  uname -r
+</code></pre>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x5305;&#x7BA1;&#x7406;&#x5668;</p>
+<pre><code class="lang-dos?linenums">  apt update
+</code></pre>
+</li>
+<li><p>&#x67E5;&#x770B;&#x53EF;&#x7528; Linux &#x5185;&#x6838;&#x7248;&#x672C;</p>
+<pre><code class="lang-dos?linenums">  apt-cache showpkg linux-image
+</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x7248;&#x672C;</p>
+<pre><code class="lang-dos?linenums">  apt install linux-image-4.10.0-22-generic
+</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x91CD;&#x542F;&#x670D;&#x52A1;&#x5668;</p>
+<pre><code class="lang-dos?linenums">  sudo reboot
+</code></pre>
+</li>
+<li><p>&#x5220;&#x9664;&#x65E7;&#x7684; Linux &#x5185;&#x6838;</p>
+<pre><code class="lang-dos?linenums">  purge-old-kernels
+</code></pre>
+<ul>
+<li><p>&#x9700;&#x8981;&#x5B89;&#x88C5; byobu</p>
+<pre><code class="lang-dos?linenums">  apt install byobu
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>&#x67E5;&#x770B;&#x73B0;&#x5728;&#x7684; Linux &#x5185;&#x6838;&#x7248;&#x672C;&#xFF0C;&#x786E;&#x4FDD;&#x5347;&#x7EA7;&#x5185;&#x6838;&#x6210;&#x529F;</p>
+<pre><code class="lang-dos?linenums">  uname -r
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x5F00;&#x542F;-bbr">&#x5F00;&#x542F; BBR</h3>
+<ul>
+<li><p>&#x8FD0;&#x884C; <code>lsmod | grep bbr</code> &#xFF0C;&#x5982;&#x679C;&#x7ED3;&#x679C;&#x6CA1;&#x6709; <code>tcp_bbr</code> &#xFF0C;&#x5219;&#x5148;&#x8FD0;&#x884C;</p>
+<pre><code class="lang-dos?linenums">  modprobe tcp_bbr
+  echo &quot;tcp_bbr&quot; &gt;&gt; /etc/modules-load.d/modules.conf
+</code></pre>
+</li>
+<li><p>&#x8FD0;&#x884C;</p>
+<pre><code class="lang-dos?linenums">  echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf
+  echo &quot;net.ipv4.tcp_congestion_control=bbr&quot; &gt;&gt; /etc/sysctl.conf
+</code></pre>
+</li>
+<li><p>&#x8FD0;&#x884C;</p>
+<pre><code class="lang-dos?linenums">  sysctl -p
+</code></pre>
+</li>
+<li><p>&#x8FD0;&#x884C;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5747;&#x6709; <code>bbr</code> &#xFF0C;&#x5219; BBR &#x5F00;&#x542F;&#x6210;&#x529F;</p>
+<pre><code class="lang-dos?linenums">  sysctl net.ipv4.tcp_available_congestion_control
+  sysctl net.ipv4.tcp_congestion_control
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x4F18;&#x5316;&#x541E;&#x5410;&#x91CF;">&#x4F18;&#x5316;&#x541E;&#x5410;&#x91CF;</h3>
+<ul>
+<li><p>&#x65B0;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-dos?linenums">  vim /etc/sysctl.d/local.conf
+</code></pre>
+<pre><code class="lang-dsconfig">  # max open files
+  fs.file-max = 51200
+  # max read buffer
+  net.core.rmem_max = 67108864
+  # max write buffer
+  net.core.wmem_max = 67108864
+  # default read buffer
+  net.core.rmem_default = 65536
+  # default write buffer
+  net.core.wmem_default = 65536
+  # max processor input queue
+  net.core.netdev_max_backlog = 4096
+  # max backlog
+  net.core.somaxconn = 4096
+
+  # resist SYN flood attacks
+  net.ipv4.tcp_syncookies = 1
+  # reuse timewait sockets when safe
+  net.ipv4.tcp_tw_reuse = 1
+  # turn off fast timewait sockets recycling
+  net.ipv4.tcp_tw_recycle = 0
+  # short FIN timeout
+  net.ipv4.tcp_fin_timeout = 30
+  # short keepalive time
+  net.ipv4.tcp_keepalive_time = 1200
+  # outbound port range
+  net.ipv4.ip_local_port_range = 10000 65000
+  # max SYN backlog
+  net.ipv4.tcp_max_syn_backlog = 4096
+  # max timewait sockets held by system simultaneously
+  net.ipv4.tcp_max_tw_buckets = 5000
+  # turn on TCP Fast Open on both client and server side
+  net.ipv4.tcp_fastopen = 3
+  # TCP receive buffer
+  net.ipv4.tcp_rmem = 4096 87380 67108864
+  # TCP write buffer
+  net.ipv4.tcp_wmem = 4096 65536 67108864
+  # turn on path MTU discovery
+  net.ipv4.tcp_mtu_probing = 1
+
+  net.ipv4.tcp_congestion_control = bbr
+</code></pre>
+</li>
+<li><p>&#x8FD0;&#x884C;</p>
+<pre><code class="lang-dos?linenums">  sysctl --system
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x8F91;&#x4E4B;&#x524D;&#x7684; <code>shadowsocks-server.service</code> &#x6587;&#x4EF6;&#xFF0C;&#x5728; <code>ExecStart</code> &#x524D;&#x63D2;&#x5165;&#x4E00;&#x884C; <code>ExecStartPre=/bin/sh -c &apos;ulimit -n 51200&apos;</code></p>
+<pre><code class="lang-dos?linenums">  vim /etc/systemd/system/shadowsocks-server.service
+</code></pre>
+<pre><code class="lang-dos?linenums">  [Unit]
+  Description=Shadowsocks Server
+  After=network.target
+
+  [Service]
+  ExecStartPre=/bin/sh -c &apos;ulimit -n 51200&apos;
+  ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/config.json
+  Restart=on-abort
+
+  [Install]
+  WantedBy=multi-user.target
+</code></pre>
+</li>
+<li><p>&#x91CD;&#x8F7D; <code>shadowsocks-server.service</code></p>
+<pre><code class="lang-dos?linenums">  systemctl daemon-reload
+</code></pre>
+</li>
+<li><p>&#x91CD;&#x542F; shadowsocks</p>
+<pre><code class="lang-dos?linenums">  systemctl restart shadowsocks-server
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x5F00;&#x542F;-tcp-fast-open">&#x5F00;&#x542F; TCP Fast Open</h3>
+<blockquote>
+<p>TCP Fast Open &#x53EF;&#x4EE5;&#x964D;&#x4F4E; Shadowsocks &#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x5EF6;&#x8FDF;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x5728;&#x4E0A;&#x4E00;&#x6B65;&#x5DF2;&#x7ECF;&#x5F00;&#x542F;&#x4E86; TCP Fast Open &#xFF0C;&#x73B0;&#x5728;&#x53EA;&#x9700;&#x8981;&#x5728; Shadowsocks &#x914D;&#x7F6E;&#x4E2D;&#x542F;&#x7528; TCP Fast Open &#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;TCP Fast Open &#x540C;&#x65F6;&#x9700;&#x8981;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x5373;&#x5BA2;&#x6237;&#x7AEF; Linux &#x5185;&#x6838;&#x7248;&#x672C;&#x4E3A; 3.7.1 &#x53CA;&#x4EE5;&#x4E0A;&#xFF1B;&#x4F60;&#x53EF;&#x4EE5;&#x5728; Shadowsocks &#x5BA2;&#x6237;&#x7AEF;&#x4E2D;&#x542F;&#x7528; TCP Fast Open &#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x7F16;&#x8F91; <code>config.json</code> &#xFF0C;&#x4FEE;&#x6539; <code>fast_open</code> &#x7684;&#x503C;&#xFF0C; <code>&quot;fast_open&quot;: true,</code></p>
+<pre><code class="lang-dos?linenums">  vim /etc/shadowsocks/config.json
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x6CE8;&#x610F;">&#x6CE8;&#x610F;</h2>
+<p>&#x672C;&#x6587;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x662F;&#x5728; <code>root</code> &#x4E0B;&#x64CD;&#x4F5C;&#x7684;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="阿里云域名解析.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2.阿里云域名解析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.阿里云服务器科学上网搭建","level":"1.6.3","depth":2,"previous":{"title":"2.阿里云域名解析","level":"1.6.2","depth":2,"path":"pages/ubuntu/阿里云域名解析.md","ref":"pages/ubuntu/阿里云域名解析.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/ubuntu/阿里云服务器科学上网搭建.md","mtime":"2018-06-29T06:39:48.160Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-29T06:48:15.725Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
